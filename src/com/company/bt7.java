@@ -32,8 +32,5 @@ public class bt7 {
             int money = (enddate - starttime)*2500;
             System.out.println("so tien phai tra voi gia quy dinh 2500/1h : " + money);
         }
-
-        // Thực hiện tính tiền dựa trên starttime và enddate ở đây
-
     }
 }
