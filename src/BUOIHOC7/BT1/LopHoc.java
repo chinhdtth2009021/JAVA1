@@ -2,11 +2,11 @@ package BUOIHOC7.BT1;
 
 import java.util.ArrayList;
 
-public class LOPHOC {
+public class LopHoc {
     private String malop, tenlop;
-    private ArrayList<HOCSINH> dsHocSinh = new ArrayList<HOCSINH>();
+    private ArrayList<HocSinh> dsHocSinh = new ArrayList<HocSinh>();
 
-    public LOPHOC(String malop, String tenlop) {
+    public LopHoc(String malop, String tenlop) {
         this.malop = malop;
         this.tenlop = tenlop;
     }
@@ -27,16 +27,16 @@ public class LOPHOC {
         this.tenlop = tenlop;
     }
 
-    public ArrayList<HOCSINH> getDsHocSinh() {
+    public ArrayList<HocSinh> getDsHocSinh() {
         return dsHocSinh;
     }
 
-    public void setDsHocSinh(ArrayList<HOCSINH> dsHocSinh) {
+    public void setDsHocSinh(ArrayList<HocSinh> dsHocSinh) {
         this.dsHocSinh = dsHocSinh;
     }
 
     // hàm thêm mới học sinh
-    public void themmoilophoc(HOCSINH hs) {
+    public void themmoilophoc(HocSinh hs) {
         dsHocSinh.add(hs);
     }
 
@@ -46,13 +46,13 @@ public class LOPHOC {
             return;
         }
         System.out.println("Danh sách học sinh của lớp : " + tenlop + ":");
-        for (HOCSINH hs : dsHocSinh) {
+        for (HocSinh hs : dsHocSinh) {
             hs.hienThiThongTin();
         }
     }
 
-    public HOCSINH timhocsinhtheomasv(String maSV) {
-        for (HOCSINH hs : dsHocSinh) {
+    public HocSinh timhocsinhtheomasv(String maSV) {
+        for (HocSinh hs : dsHocSinh) {
             if (hs.getMaSV().equals(maSV)) {
                 return hs;
             }

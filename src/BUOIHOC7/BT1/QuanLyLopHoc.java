@@ -3,9 +3,9 @@ package BUOIHOC7.BT1;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class QUANLYLOPHOC {
+public class QuanLyLopHoc {
     static Scanner sc = new Scanner(System.in);
-    static ArrayList<LOPHOC> dslophoc = new ArrayList<>();
+    static ArrayList<LopHoc> dslophoc = new ArrayList<>();
 
     public static void themLophocmoi() {
         sc.nextLine();

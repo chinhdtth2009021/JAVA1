@@ -1,10 +1,10 @@
 package BUOIHOC7.BT1;
 
-public class HOCSINH {
+public class HocSinh {
     private  String name, maSV;
     private  int namsinh;
 
-    public HOCSINH(String name, String maSV, int namsinh) {
+    public HocSinh(String name, String maSV, int namsinh) {
         this.name = name;
         this.maSV = maSV;
         this.namsinh = namsinh;
